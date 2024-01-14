@@ -1,1 +1,76 @@
+<html>
+    <head>
+        <title>Draw with canvas</title>
+        <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+        <link rel="stylesheet" href="draw.css">
+        <script src="draw.js" defer></script>
+    </head>
 
+    <div id="container">
+
+        <div id="draw">
+            <canvas id="canvas2d" width="800" height="800"></canvas>
+        </div>
+
+        <div id="controls">
+           
+            <div class="button" id="line">
+                Line
+            </div>
+
+            <div class="button" id="rectangle">
+                Rectangle
+            </div>
+
+            <div class="button" id="circle">
+                Circle
+            </div>
+
+            <div class="button" id="rainbow">
+                Rainbow
+            </div>
+            
+            <div id="text-div">
+                <div class="button" id="text">
+                    Text example
+                </div>
+                <input type="text" id="text-field">
+            </div>
+
+            <div id="regular-div" class="inner-container">
+
+                <input type="number" class="number" id="vertices-count" min="3" max="24">
+                
+                <div class="button" id="regular">
+                    Regular polygon
+                </div>
+
+            </div>
+
+            <div id="star-div" class="inner-container">
+
+                <input type="number" class="number" id="rays-count" min="3" max="24">
+                
+                <div class="button" id="star">
+                    Star
+                </div>
+
+            </div>
+
+            <div class="button" id="clear">
+                Clear canvas
+            </div>
+
+
+            <div id="color-div">
+                <input type="color" id="colorPicker">
+            </div>
+        
+        </div>
+
+    </div>
+
+    <body>
+
+    </body>
+</html>
