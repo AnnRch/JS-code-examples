@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Store catalog</title>
+        <script src="main.js" defer></script>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="shortcut icon" href="#">
+    </head>
+    <body>
+        <div class="store">
+           <h1>Store catalog</h1>
+           <div class="store-box">
+            <div class="left-box">
+                <!-- <form> -->
+                      
+                    <div class="select" id="store_div">
+                        <label for="store">Select store</label>  
+                        <select id="store" selectedIndex="-1" onchange="changeStore()">
+                            <!-- onchange="changeCategory()" -->
+                            <option value="stores">Select a store</option>
+                            <option value="store1">Carrefour</option>
+                            <option value="store2">Nikora</option>
+                            <option value="store3">AlexTrade</option>
+                        </select>        
+                    </div>   
+                   
+                    <div class="select" id="category_div">
+                        <label for="category">Select category</label>
+                        <select id="category" onchange="changeCategory()" >
+                            <!-- onchange="changeCategory()" -->
+                            <option>Categories</option>
+                        </select>        
+                    </div>   
+                      
+                    <div class="select" id="item_div">
+                        <label for="items">Select product</label> 
+                        <select id="items"
+                            onchange="changeItem()" >
+                            <!-- onload="ClearOptions('items')" -->
+                            <option value="items">Items</option>
+                        </select>
+                    </div>
+            
+                    <!-- <button type="sumbit" name="load" class="button" id="load-button"> -->
+                        <!-- Load data
+                    </button> -->
+
+                <!-- </form> -->
+
+            </div>
+            <div class="right-box">
+                <h3 id="name">Product: </h3>
+                <img src="Images/placeholder.png" id="image" width="50%">
+                <p class="price" id="item-price">Price: </p>
+                <button type="submit" name="link" class="button">
+                    Visit official <span id="store-span"></span> web site
+                </button>
+                <!-- <button type="submit" class="button">Create order</button> -->
+            </div>
+
+           </div>   
+           
+           
+        </div>
+    </body>
+</html>
